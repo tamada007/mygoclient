@@ -146,8 +146,8 @@ function application(req, res) {
                 }
             }
 
-            //var httplib = option.protocol == 'https:' ? https : http;
-            var httplib = https;//kage
+            var httplib = option.protocol == 'https:' ? https : http;
+            //var httplib = https;//kage
             option.path = option.path ? option.path : option.pathname+(option.search ? option.search : '');
             option.method = request.method;
             option.headers = request.headers;
